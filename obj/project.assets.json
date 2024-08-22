@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\josea\\.nuget\\packages\\": {}
+    "C:\\Users\\esteb\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\josea\\OneDrive\\Escritorio\\Prueba\\Prueba.csproj",
+      "projectUniqueName": "C:\\Users\\esteb\\OneDrive\\Documentos\\ITQ\\AUTOMATAS\\Prueba\\Prueba.csproj",
       "projectName": "Prueba",
-      "projectPath": "C:\\Users\\josea\\OneDrive\\Escritorio\\Prueba\\Prueba.csproj",
-      "packagesPath": "C:\\Users\\josea\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\josea\\OneDrive\\Escritorio\\Prueba\\obj\\",
+      "projectPath": "C:\\Users\\esteb\\OneDrive\\Documentos\\ITQ\\AUTOMATAS\\Prueba\\Prueba.csproj",
+      "packagesPath": "C:\\Users\\esteb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\esteb\\OneDrive\\Documentos\\ITQ\\AUTOMATAS\\Prueba\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\josea\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\esteb\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
