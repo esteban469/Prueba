@@ -4,34 +4,117 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace Archivos
+namespace Prueba
 {
     public class Lecturas : IDisposable
     {
-        StreamReader archivo;
+        StreamReader Prueba;
         StreamWriter log;
         public Lecturas()
         {
-            archivo = new StreamReader("prueba.cpp");
+            Console.WriteLine("Constructor 1");
+            Prueba = new StreamReader("prueba.cpp");
             log     = new StreamWriter("prueba.log");
         }
         public Lecturas(string nombre)
         {
-            archivo = new StreamReader(nombre);
+            Console.WriteLine("****");
+            Prueba = new StreamReader(nombre);
             log     = new StreamWriter("prueba.log");
         }
         
         public void Dispose()
         {
-            archivo.Close();
+            Console.WriteLine("****");
+            Prueba.Close();
             log.Close();
         }
-        public void Display()
+        public void Copy()
         {
-            while (!archivo.EndOfStream)
+        while (!Prueba.EndOfStream)
+    {
+       log.Write((char)Prueba.Read()); 
+    }
+        }
+         public void Encrypt()
+        {
+            char c;
+        while (!Prueba.EndOfStream)
+    {
+        c = (char)Prueba.Read();
+        if (char.IsLetter(c))
+        {
+        log.Write((char)(c+2));
+        }
+        else
+        {
+        log.Write(c);
+        }
+    
+        }
+        }
+        public void DesEncrypt()
+        {
+            char c;
+        while (!Prueba.EndOfStream)
+    {
+        c = (char)Prueba.Read();
+        if (char.IsLetter(c))
+        {
+        log.Write((char)(c-2));
+        }
+        else
+        {
+        log.Write(c);
+        }
+    
+        }
+        }
+        public void Encrypt2()
+        {
+        char c;
+        while (!Prueba.EndOfStream)
+        {
+        c = (char)Prueba.Read();
+        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
+        {
+        log.Write((char)('a'));
+        }
+        else
+        {
+        log.Write(c);
+        }
+        }
+        }
+        public int ContarLetras(){
+
+            int contador = 0;
+            char c;
+            while (!Prueba.EndOfStream)
             {
-                Console.Write((char)archivo.Read());
+                c = (char)Prueba.Read();
+                if (char.IsLetter(c))
+                {
+                    contador++;
+                }
             }
+            return contador;
+        }
+
+        public int ContarEspacios(){
+
+            int contador=0;
+            char c;
+            while (!Prueba.EndOfStream)
+            {
+                c = (char)Prueba.Read();
+                if (char.IsWhiteSpace(c))
+                {
+                    contador++;
+                }
+            }
+            return contador;
+
         }
     }
 }

@@ -26,3 +26,4 @@ C:\Users\esteb\OneDrive\Documentos\ITQ\AUTOMATAS\Prueba\obj\Debug\net8.0\refint\
 C:\Users\esteb\OneDrive\Documentos\ITQ\AUTOMATAS\Prueba\obj\Debug\net8.0\Prueba.pdb
 C:\Users\esteb\OneDrive\Documentos\ITQ\AUTOMATAS\Prueba\obj\Debug\net8.0\Prueba.genruntimeconfig.cache
 C:\Users\esteb\OneDrive\Documentos\ITQ\AUTOMATAS\Prueba\obj\Debug\net8.0\ref\Prueba.dll
+C:\Users\esteb\OneDrive\Documentos\ITQ\AUTOMATAS\Prueba\obj\Debug\net8.0\Prueba.sourcelink.json
