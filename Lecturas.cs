@@ -116,5 +116,10 @@ namespace Prueba
             return contador;
 
         }
+
+        /*public char primerCaracter(){
+            char c; 
+
+        }*/
     }
 }

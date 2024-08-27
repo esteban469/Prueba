@@ -13,9 +13,9 @@ namespace Prueba
             using (Lecturas L = new Lecturas("prueba.cpp"))
             {
                 //L.Encrypt2();
-                Console.WriteLine(L.ContarLetras());
-                Console.WriteLine(L.ContarEspacios());
-            }
+                Console.WriteLine($"Numero de letras: {(L.ContarLetras())}");
+                Console.WriteLine($"Numero de espacios: {(L.ContarEspacios())}");       
+             }
             
         }
     }
